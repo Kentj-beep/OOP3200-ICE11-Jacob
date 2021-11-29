@@ -3,8 +3,8 @@ package ca.durhamcollege.utility;
 public class Vector2D
 {
     // PRIVATE INSTANCE VARIABLES
-    private float x;
-    private float y;
+    protected float x;
+    protected float y;
 
     // PUBLIC PROPERTIES (MUTATORS & ACCESSORS)
     public float getX()
@@ -90,7 +90,7 @@ public class Vector2D
 
     public float getMagnitude()
     {
-        return (float)(Math.sqrt(this.getX() * this.getX() + this.getY() * this.getY()));
+        return (float)(Mathf.Sqrt(this.getX() * this.getX() + this.getY() * this.getY()));
     }
 
     public float getSqrMagnitude()
